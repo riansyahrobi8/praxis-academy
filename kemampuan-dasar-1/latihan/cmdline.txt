@@ -1,0 +1,37 @@
+1. C:\Users\riansyahrobi8>D:
+2. D:\>mkdir praxis-academy\kemapuan-dasar-1\latihan
+3. D:\>dir
+4. D:\praxis-academy\kemampuan-dasar-1\latihan>
+5. D:\praxis-academy\kemampuan-dasar-1\latihan>PowerShell
+6. PS D:\praxis-academy\kemampuan-dasar-1\latihan> exit
+7. D:\praxis-academy\kemampuan-dasar-1\latihan>mkdir folder1
+   D:\praxis-academy\kemampuan-dasar-1\latihan>mkdir folder2
+   D:\praxis-academy\kemampuan-dasar-1\latihan>mkdir folder3
+8. D:\praxis-academy\kemampuan-dasar-1\latihan>rmdir folder3
+9. D:\praxis-academy\kemampuan-dasar-1\latihan>echo hallo nama ku robi > test.txt
+10. D:\praxis-academy\kemampuan-dasar-1\latihan>type test.txt
+    hallo nama ku robi
+11. D:\praxis-academy\kemampuan-dasar-1\latihan>del /s test2.txt
+    Deleted file - D:\praxis-academy\kemampuan-dasar-1\latihan\test2.txt
+12. D:\praxis-academy\kemampuan-dasar-1\latihan>rmdir /s folder2
+    folder2, Are you sure (Y/N)? y
+13. D:\praxis-academy\kemampuan-dasar-1>chdir
+    D:\praxis-academy\kemampuan-dasar-1
+14. D:\praxis-academy\kemampuan-dasar-1>cd latihan
+15. D:\praxis-academy\kemampuan-dasar-1\latihan>help
+16. D:\praxis-academy\kemampuan-dasar-1\latihan>date
+    The current date is: Thu 11/07/2019
+    Enter the new date: (mm-dd-yy)
+17. D:\praxis-academy\kemampuan-dasar-1\latihan>exit
+18. D:\praxis-academy\kemampuan-dasar-1\latihan>cls
+19. D:\>cd ..\praxis-academy
+20. D:\praxis-academy\kemampuan-dasar-1\latihan
+21. D:\praxis-academy\kemampuan-dasar-1\latihan>copy test.txt D:\praxis-academy\kemampuan-dasar-1\latihan\folder1
+        1 file(s) copied.
+22. D:\praxis-academy\kemampuan-dasar-1\latihan>move test.txt D:\praxis-academy\kemampuan-dasar-1\latihan\folder2
+        1 file(s) moved.
+23. D:\praxis-academy\kemampuan-dasar-1\latihan>copy file1.txt + file2.txt Report
+    file1.txt
+    file2.txt
+        1 file(s) copied.
+24. D:\praxis-academy\kemampuan-dasar-1\latihan>ren Report Report.txt
