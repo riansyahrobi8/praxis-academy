@@ -2,10 +2,7 @@ class Spacecraft {
   String name;
   DateTime launchDate;
 
-  Spacecraft(this.name, this.launchDate) {
-    this.name = name;
-    this.launchDate = launchDate;
-  }
+  Spacecraft(this.name, this.launchDate);
 
   Spacecraft.unlaunched(String name) : this(name, null);
 
@@ -19,6 +16,13 @@ class Spacecraft {
     } else {
       print('Unlaunched');
     }
+  }
+}
+
+class Piloted {
+  int astronauts = 1;
+  void describeCrew() {
+    print('Number astrnauts $astronauts');
   }
 }
 
