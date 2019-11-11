@@ -48,8 +48,8 @@ main() {
     print(object);
   }
 
-  for (int mount = 1; mount <= bulan.length; mount++) {
-    print("Bulan ke-" + mount.toString() + " adalah " + bulan[mount - 1]);
+  for (int month = 1; month <= bulan.length; month++) {
+    print("Bulan ke-" + month.toString() + " adalah " + bulan[month - 1]);
   }
 
   // ini belajar fungsi
