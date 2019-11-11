@@ -74,6 +74,6 @@ main() {
   var voyager2 = Spacecraft.unlaunched('Voyager III');
   voyager2.describe();
 
-  var orbitter = new Orbiter('Robi', DateTime(1996, 11, 12), 6);
+  var orbitter = Orbiter('Robi', DateTime(1996, 11, 12), 6);
   orbitter.describe();
 }
