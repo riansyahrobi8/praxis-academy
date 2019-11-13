@@ -31,6 +31,27 @@ class Point {
   }
 }
 
+// belajar implicit interface
+class Bangundatar {
+  void hitungLuas(double a, double b) {}
+
+  void hitungKeliling(double a, double b, double c) {}
+}
+
+class Segitiga implements Bangundatar {
+  @override
+  void hitungLuas(double a, double b) {
+    var luas = a * b / 2;
+    print(luas);
+  }
+
+  @override
+  void hitungKeliling(double a, double b, double c) {
+    var kel = a + b + c;
+    print(kel);
+  }
+}
+
 void main() {
   // var point = Point(2, 4);
   // var point = Point.origin();
@@ -54,4 +75,9 @@ void main() {
   Teacher teachers =
       new Teacher("Pak Bambang", "Jl. Kaliurang", 46, "Dosen RPL");
   teachers.display();
+
+  Segitiga pp = new Segitiga();
+
+  pp.hitungKeliling(1, 2, 3);
+  pp.hitungLuas(10, 6);
 }
