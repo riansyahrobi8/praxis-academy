@@ -122,4 +122,28 @@ main() {
     print(ulangi);
     ulangi--;
   } while (ulangi >= 0);
+
+  // try {
+  //   // lakukan sesuatu
+  // } catch (e) {
+  //   print("Error : $e");
+  // } finally {
+  //   // lakukan sesuatu
+  // }
+
+  void misbehave() {
+    try {
+      dynamic foo = true;
+      print(foo++);
+    } catch (e) {
+      print("misbehave() partially handle ${e.runtimeType}");
+      rethrow;
+    }
+  }
+
+  try {
+    misbehave();
+  } catch (e) {
+    print("main() fisnished handle ${e.runtimeType}");
+  }
 }
