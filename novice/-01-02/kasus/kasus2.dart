@@ -1,17 +1,17 @@
-index_equal_value(t, st, end) {
-  if (st > end) {
-    return -1;
-  }
+// index_equal_value(t, st, end) {
+//   if (st > end) {
+//     return -1;
+//   }
 
-  double mid = (st + end) / 2;
-  if (t[mid] > mid) {
-    return index_equal_value(t, st, mid - 1);
-  } else if (t[mid] < mid) {
-    return index_equal_value(t, mid + 1, end);
-  } else {
-    return mid;
-  }
-}
+//   double mid = (st + end) / 2;
+//   if (t[mid] > mid) {
+//     return index_equal_value(t, st, mid - 1);
+//   } else if (t[mid] < mid) {
+//     return index_equal_value(t, mid + 1, end);
+//   } else {
+//     return mid;
+//   }
+// }
 
 index_equel_value(t) {
   //t = [2, 3, 12];
@@ -31,6 +31,7 @@ index_equel_value(t) {
 }
 
 main() {
-  print(index_equel_value(4));
+  var A = [11, 1, 22, 12, 21];
+  print(index_equel_value(A));
   //print(index_equal_value(2, 3, 4));
 }
