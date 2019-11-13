@@ -123,6 +123,7 @@ main() {
     ulangi--;
   } while (ulangi >= 0);
 
+  // belajar try catch
   // try {
   //   // lakukan sesuatu
   // } catch (e) {
