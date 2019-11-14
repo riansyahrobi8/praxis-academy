@@ -25,6 +25,4 @@ class BelajarMap {
 
     print(persons);
   }
-
-  //void ();
 }
