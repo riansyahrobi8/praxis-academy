@@ -21,7 +21,7 @@ void main() {
         print("\tPress [1] Deposit");
         print("\tPress [2] Withdraw");
         print("\tPress [3] Balance Inquiry");
-        print("\tPress [4] Deposit");
+        print("\tPress [4] Exit");
 
         print("\n\tWhat would you like to do ? ");
         select = int.parse(stdin.readLineSync());
