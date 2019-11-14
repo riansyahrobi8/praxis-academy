@@ -1,3 +1,5 @@
+import 'dart:collection';
+
 class BelajarMap {
   var detail = {'username': 'tom', 'password': '123'};
   Map persons = new Map();
