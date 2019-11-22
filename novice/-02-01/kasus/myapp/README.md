@@ -100,3 +100,44 @@ class MyApp extends StatelessWidget {
     <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/kasus1.png" width="300">
     <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/kasus2.png" width="300">
 </p>
+
+### Langkah 3: Menambahkan Statefull Widget
+1. Ketik `stf` pilih yang statefull widget dengan menakan tombol tab
+<p align="center">
+    <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/stf.png">
+</p>
+
+2. Ubahlah *widget* `RandomWordState` menjadi seperti berikut:
+```
+class RandomWordsState extends State<RandomWords> {
+  @override
+  Widget build(BuildContext context) {
+    final wordPair = WordPair.random();
+    return Text(wordPair.asPascalCase);
+  }
+}
+```
+3. Ubahlah *widget* `MyApp` menjadi seperti berikut:
+```
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Welcome to Flutter',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Welcome to Flutter'),
+        ),
+        body: Center(
+          child: RandomWords(),
+        ),
+      ),
+    );
+  }
+}
+```
+4. Jalankan kembali aplikasinya dengan menekan tombol `F5`.
+<p align="center">
+    <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc1.png" width="300">
+    <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc2.png" width="300">
+</p>
