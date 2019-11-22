@@ -43,9 +43,7 @@ home: Scaffold(
 dalam sdk flutter terdapat material design untuk android yang menampung *widget* `Scaffold` sebagai tampilan utamanya. Dalam *widget* ini secara umum terdapat 2 bagian yakni `appBar` dan `body`. Pada `appBar` terdapat properti `title` dari sebuah halaman atau *activity* kemudian pada `body` merupakan isi dari kontent yang ingin ditampilkan. Jika dilakukan `flutter run <nama_file.dart>` tulisan `Hello World` akan berada tepat ditengah konten.
 <br/>
 
-```
-Tips: Ketika menulis kode, biasanya tampilan kode tidak beraturan, kamu bisa memperbaiki secara otomatis dengan cara berikut:
+**Tips**: Ketika menulis kode, biasanya tampilan kode tidak beraturan, kamu bisa memperbaiki secara otomatis dengan cara berikut:
 
 - Android Studio / IntelliJ IDEA: Klik kanan pada kode, pilih Reformat Code dengan dartfmt.
 - VS Code: Klik kanan kemudian pilih Format Document.
-```
