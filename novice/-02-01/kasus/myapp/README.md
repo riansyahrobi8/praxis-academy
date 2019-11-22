@@ -64,7 +64,39 @@ dalam sdk flutter terdapat material design untuk android yang menampung *widget*
 
 2. Kemudian jalankan perintah `flutter pub get` pada terminal.
 3. Pada `lib/main.dart` tambahkan paket baru yakni `import 'package:english_words/english_words.dart';`
-4. Menggunakan paket yang telah diimport sebelumnya
 <p align="center">
-    <img src="">
+    <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/importpackage.png">
+</p>
+
+4. Menggunakan paket yang telah diimport sebelumnya
+
+```
+import 'package:flutter/material.dart';
+import 'package:english_words/english_words.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    final wordPair = WordPair.random();
+    return MaterialApp(
+      title: 'Welcome to Flutter',
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Welcome to Flutter'),
+        ),
+        body: Center(
+          // child: Text('Hello World'),
+          child: Text(wordPair.asPascalCase),
+        ),
+      ),
+    );
+  }
+}
+```
+5. Jalankan kembali aplikasi secara *hot reload* atau dengan menekan logo petir.
+<p align="center">
+    <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/kasus1.png" width="300">
+    <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/kasus2.png" width="300">
 </p>
