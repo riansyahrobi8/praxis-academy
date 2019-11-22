@@ -58,4 +58,8 @@ dalam sdk flutter terdapat material design untuk android yang menampung *widget*
 
 ### Langkah 2: Menggunakan paket eksternal
 1. Tambahkan paket `english_words` versi `3.1.0` atau lebih tinggi ke dalam `pubspec.yaml`. Dokument `pubspec` berfungsi untuk mengatur assets dan dependency dari sebuah aplikasi Flutter.
-![Paket]()
+<p align="center">
+    <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/pubspec.png">
+</p>
+
+2. 
