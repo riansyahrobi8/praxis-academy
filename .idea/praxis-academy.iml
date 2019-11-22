@@ -23,12 +23,27 @@
       <excludeFolder url="file://$MODULE_DIR$/novice/-02-01/kasus/myapp/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/novice/-02-01/kasus/myapp/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/novice/-02-01/kasus/myapp/build" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/kasus/kasus1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/kasus/kasus1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/kasus/kasus1/build" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/kasus/kasus2/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/kasus/kasus2/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/kasus/kasus2/build" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/kasus/kasus31/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/kasus/kasus31/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/kasus/kasus31/build" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/kasus/kasus32/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/kasus/kasus32/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/kasus/kasus32/build" />
       <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/latihan/belajarwidget/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/latihan/belajarwidget/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/latihan/belajarwidget/build" />
       <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/latihan/blajarwidget/.dart_tool" />
       <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/latihan/blajarwidget/.pub" />
       <excludeFolder url="file://$MODULE_DIR$/novice/-02-02/latihan/blajarwidget/build" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-03/latihan/latihan1/.dart_tool" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-03/latihan/latihan1/.pub" />
+      <excludeFolder url="file://$MODULE_DIR$/novice/-02-03/latihan/latihan1/build" />
     </content>
     <orderEntry type="jdk" jdkName="Android API 29 Platform" jdkType="Android SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
