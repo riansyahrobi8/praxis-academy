@@ -6,16 +6,7 @@ Flutter adalah sebuah *framework* aplikasi *mobile open source* yang diciptakan 
 2. Ekstrak file .rar nya di folder manapun **kecuali** `C:\Program Files\`.
 3. Untuk pengguna Windows, tambah path pada environtmentnya untuk flutter dan sdk dartnya. Contoh `C:\src\flutter\bin` untuk flutter dan `C:\src\flutter\bin\cache\dart-sdk\bin` untuk dartnya.
 4. Buka terminal kemudian jalankan `$ flutter doctor`.
-5. Pastikan flutter telah terinstal. Hasil `Doctor summary (to see all details, run flutter doctor -v):
-[√] Flutter (Channel stable, v1.9.1+hotfix.6, on Microsoft Windows [Version 10.0.18363.476], locale en-US)
-
-[√] Android toolchain - develop for Android devices (Android SDK version 29.0.2)
-[√] Android Studio (version 3.5)
-[√] VS Code (version 1.40.1)
-[!] Connected device
-    ! No devices available
-
-! Doctor found issues in 1 category.`
+5. Pastikan flutter telah terinstal. ![Hasil](D:\praxis-academy\novice\-02-01\latihan\gambar)
 
 Flutter dapat diinstal di beberapa IDE seperti:
 
