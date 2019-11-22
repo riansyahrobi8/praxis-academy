@@ -53,6 +53,7 @@ dalam sdk flutter terdapat material design untuk android yang menampung *widget*
 
 2. Jalankan `flutter run <nama_file.dart>` pada terminal atau `F5` pada editor VS Code tulisan `Hello World` akan berada tepat ditengah konten.
 <p align="center">
+<p> Android </p>
 <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/kasus.png" width="300">
 </p>
 
