@@ -62,4 +62,9 @@ dalam sdk flutter terdapat material design untuk android yang menampung *widget*
     <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/pubspec.png">
 </p>
 
-2. 
+2. Kemudian jalankan perintah `flutter pub get` pada terminal.
+3. Pada `lib/main.dart` tambahkan paket baru yakni `import 'package:english_words/english_words.dart';`
+4. Menggunakan paket yang telah diimport sebelumnya
+<p align="center">
+    <img src="">
+</p>
