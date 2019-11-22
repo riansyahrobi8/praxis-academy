@@ -102,7 +102,7 @@ class MyApp extends StatelessWidget {
 </p>
 
 ### Langkah 3: Menambahkan Statefull Widget
-1. Ketik `stf` pilih yang statefull widget dengan menakan tombol tab
+1. Ketik `stf` pilih yang statefull widget dengan menakan tombol tab kemudian ketik namanya *widget* `RandomWordState`.
 <p align="center">
     <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/stf.png">
 </p>
