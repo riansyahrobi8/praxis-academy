@@ -141,3 +141,32 @@ class MyApp extends StatelessWidget {
     <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc1.png" width="300">
     <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc2.png" width="300">
 </p>
+
+### Langkah 4: Membuat infinite scrolling ListView
+1. Menambahkan variabel static yakni `_suggestions` yang berisi `<WordPair>[]` array dari *widget* `WordPair` dan `_biggerFont` yang berisi ukuran *font* 18.0 bertipe konstanta.
+```
+class _RandomWordsState extends State<RandomWords> {
+  final _suggestions = <WordPair>[];
+  final _biggerFont = const TextStyle(fontSize: 18.0);
+  // ···
+}
+```
+**Penjelesan:**
+*Function* ini akan membuat sebuah *widget* `ListView` yang menyediakan properti *builder*. Dalam properti *builder* terdapat *itemBuilder* menggunakan 2 parameter yakni `_BuildContext` dan iterator baris ke `i` dan mengembalikan *function* nilai balik anonim. Ietrasinya dimulai dari nol dan selalu bertambah setiap kali *function* dipanggil. Bertambah 2 kali setiap `wordpair`, 1 kali untuk `ListTile` pada `_buildRow` dan 1 kali untuk `Divider`.
+2. Menambahkan *function* `_buildSuggestions` pada *class* `RandomWordsState`.
+```
+Widget _buildSuggestions() {
+  return ListView.builder(
+      padding: const EdgeInsets.all(16.0),
+      itemBuilder: /*1*/ (context, i) {
+        if (i.isOdd) return Divider(); /*2*/
+
+        final index = i ~/ 2; /*3*/
+        if (index >= _suggestions.length) {
+          _suggestions.addAll(generateWordPairs().take(10)); /*4*/
+        }
+        return _buildRow(_suggestions[index]);
+      });
+}
+``` 
+- /*1*/ 
