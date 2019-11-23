@@ -12,3 +12,5 @@ Ini merupakan lanjutan project `First App` sebelumnya.
     * Bagaimana mengubah tampilan menggunakan tema.
 - Apa yang akan dibangun di part 2 ini:
 Pengguna akan memilih daftar nama yang disukai atau yang tidak disukai kemudian menekan icon daftar nama yang ada di `AppBar` untuk melihat daftar nama yang disukai.
+### Langkah 2: Mengatur environment Flutter
+Langkah ini sudha dilakukan pada [latihan](https://github.com/riansyahrobi8/praxis-academy/tree/master/novice/-02-01/latihan) minggu kedua hari pertama
