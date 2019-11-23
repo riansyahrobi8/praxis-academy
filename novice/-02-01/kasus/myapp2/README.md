@@ -126,7 +126,7 @@ void _pushSaved() {
   );
 }
 ```
-5. Selanjutnya kita akan menambahkan `MaterialPageRoute`
+5. Selanjutnya kita akan menambahkan `MaterialPageRoute` dengan properti `builder`. Terdapat perulangan yang berisi nilai `wordPair` kemudian dimasukan ke dalam *widget* `ListTile` dengan pengaturan ukuran font dan `TextStyle`. *Method* `dividedTiles` dari `ListTile` menambah jarak antar setiap `ListTile` lalu ditampilkan menggunakan *method* `toList()`
 ```
 Add the code, as shown below:
 
@@ -155,3 +155,4 @@ void _pushSaved() {
   );
 }
 ```
+6. 
