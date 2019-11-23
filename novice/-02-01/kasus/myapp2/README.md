@@ -83,6 +83,7 @@ Widget _buildRow(WordPair pair) {
 ```
 Dalam *function* `setState()` terdapat seleksi, jika *icon favorite* dalam keadaan aktif atau merah ditekan, maka `wordPair` akan dihapus dari daftar disukai, begitu sebaliknya.
 <br/>
+
 2. Jalankan aplikasi secara `Hot Reload` dengan menekan `F5` atau klik logo petir.
 <p align="center">
   <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/part22.png" width="300">
