@@ -115,7 +115,10 @@ class RandomWordsState extends State<RandomWords> {
 void _pushSaved() {
   }
 ```
-3. Jalankan kembali aplikasi dengan menekan tombol `F5` untuk melihat *icon* daftar pada `AppBar`. Jika icon ini ditekan, maka tidak terjadi apa-apa dikarenakan *function* `_pushSaved` masih kosong. 
+3. Jalankan kembali aplikasi dengan menekan tombol `F5` untuk melihat *icon* daftar pada `AppBar`. Jika icon ini ditekan, maka tidak terjadi apa-apa dikarenakan *function* `_pushSaved` masih kosong.
+<p align="center">
+  <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/part23.png" width="300">
+</p>
 
 Selanjutnya kita akan membuat halaman baru dan mengarahkan halaman ini ke halaman tersebut. Halaman baru dibangun menggunakan properti `MaterialPageRoute`.
 
@@ -128,8 +131,6 @@ void _pushSaved() {
 ```
 5. Selanjutnya kita akan menambahkan `MaterialPageRoute` dengan properti `builder`. Terdapat perulangan yang berisi nilai `wordPair` kemudian dimasukan ke dalam *widget* `ListTile` dengan pengaturan ukuran font dan `TextStyle`. *Method* `dividedTiles` dari `ListTile` menambah jarak antar setiap `ListTile` lalu ditampilkan menggunakan *method* `toList()`
 ```
-Add the code, as shown below:
-
 void _pushSaved() {
   Navigator.of(context).push(
     MaterialPageRoute<void>(   // tambahkan 20 baris mulai dari sini...
@@ -155,4 +156,28 @@ void _pushSaved() {
   );
 }
 ```
-6. 
+6. Menambahkan horizontal dividers.
+Properti `builder` mengebalikan `Scaffold` yang berisi halam baru dengan nama `Saved Suggestions`. `body` berisi `ListView` dari `ListTile` yang setiap barisnya dipisah dengan `divider`.
+```
+void _pushSaved() {
+  Navigator.of(context).push(
+    MaterialPageRoute<void>(
+      builder: (BuildContext context) {
+        ...
+
+        return Scaffold(         // tambahkan 6 baris mulai dari sini...
+          appBar: AppBar(
+            title: Text('Saved Suggestions'),
+          ),
+          body: ListView(children: divided),
+        );                       // ... sampai sini.
+      },
+    ),
+  );
+}
+```
+7. Jalankan kembali aplikasi dengan menekan tombol `F5` atau klik logo petir.
+<p align="center">
+  <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/part23.png" width="300">
+  <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/part24.png" width="300">
+</p>
