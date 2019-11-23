@@ -8,6 +8,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Startup Name Generator',
+      theme: ThemeData(
+        primaryColor: Colors.white,
+      ),
       home: RandomWords(),
     );
   }
@@ -28,9 +31,39 @@ class _RandomWordsState extends State<RandomWords> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Startup Name Generator"),
+        actions: <Widget>[
+          IconButton(icon: Icon(Icons.list), onPressed: _pushSave),
+        ],
       ),
       body: _buildSuggestions(),
     );
+  }
+
+  void _pushSave() {
+    Navigator.of(context)
+        .push(MaterialPageRoute(builder: (BuildContext context) {
+      final Iterable<ListTile> tiles = _saved.map(
+        (WordPair wordPair) {
+          return ListTile(
+            title: Text(
+              wordPair.asPascalCase,
+              style: _biggerFont,
+            ),
+          );
+        },
+      );
+      final List<Widget> divided = ListTile.divideTiles(
+        context: context,
+        tiles: tiles,
+      ).toList();
+
+      return Scaffold(
+        appBar: AppBar(
+          title: Text("Save Suggestions"),
+        ),
+        body: ListView(children: divided),
+      );
+    }));
   }
 
   Widget _buildSuggestions() {
@@ -58,6 +91,15 @@ class _RandomWordsState extends State<RandomWords> {
         alreadySaved ? Icons.favorite : Icons.favorite_border,
         color: alreadySaved ? Colors.red : null,
       ),
+      onTap: () {
+        setState(() {
+          if (alreadySaved) {
+            _saved.remove(wordPair);
+          } else {
+            _saved.add(wordPair);
+          }
+        });
+      },
     );
   }
 }
