@@ -181,3 +181,25 @@ void _pushSaved() {
   <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/part23.png" width="300">
   <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/part24.png" width="300">
 </p>
+
+### Langkah 7: Mengubah UI menggunakan Tema
+Kita dapat mengubah tema aplikasi. Kita dapat menggunakan tema *default* atau sesuai keinginan kita. Dalam kasus ini kita akan mengubah tema aplikasi dengan warna putih.
+1. Ubah warna di dalam *class* `MyApp`
+```
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Startup Name Generator',
+      theme: ThemeData(          // tambahkan 3 baris mulai dari sini... 
+        primaryColor: Colors.white,
+      ),                         // ... sampai sini.
+      home: RandomWords(),
+    );
+  }
+}
+```
+2. Jalankan kembali aplikasi
+<p align="center">
+  <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/part25.png" width="300">
+</p>
