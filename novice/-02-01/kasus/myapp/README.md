@@ -217,3 +217,6 @@ class MyApp extends StatelessWidget {
   <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc32.png" width="250">
   <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc33.png" width="250">
 </p>
+
+## [Lanjutan Part 2](https://github.com/riansyahrobi8/praxis-academy/tree/master/novice/-02-01/kasus/myapp2)
+Klik link diatas untuk melanjutkan ke part 2.
