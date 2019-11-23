@@ -87,3 +87,69 @@ Dalam *function* `setState()` terdapat seleksi, jika *icon favorite* dalam keada
 <p align="center">
   <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/part22.png" width="300">
 </p>
+
+### Langkah 6: Arahkan ke tampilan baru
+Dalam langkah ini, kita akan menambahkan halaman baru dan menampilkan daftar `wordPair` yang disukai. Dalam Flutter *widget* `Navigator` mengelola tumpukan rute antar halaman dalam sebuah aplikasi. Selanjutnya kita akan menambahkan *icon* daftar ke `AppBar` dalam *method* `build` `_RandomWordsState`
+1. Menambahakan icon ke dalam *widget* `build` yang ada di dalam *class* `_RandomWordsState`.
+```
+class RandomWordsState extends State<RandomWords> {
+  ...
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Startup Name Generator'),
+        actions: <Widget>[      // tambahkan 3 baris mulai dari sini...
+          IconButton(icon: Icon(Icons.list), onPressed: _pushSaved),
+        ],                      // ... sampai sini.
+      ),
+      body: _buildSuggestions(),
+    );
+  }
+  ...
+}
+```
+2. Tambahkan *function* `setState()` pada `_RandomWordsState`.
+```
+void _pushSaved() {
+  }
+```
+3. Jalankan kembali aplikasi dengan menekan tombol `F5` untuk melihat *icon* daftar pada `AppBar`. Jika icon ini ditekan, maka tidak terjadi apa-apa dikarenakan *function* `_pushSaved` masih kosong. 
+
+Selanjutnya kita akan membuat halaman baru dan mengarahkan halaman ini ke halaman tersebut. Halaman baru dibangun menggunakan properti `MaterialPageRoute`.
+4. Panggil *widget* `Navigator.push()` dalam *function* `_pushSaved`.
+```
+void _pushSaved() {
+  Navigator.of(context).push(
+  );
+}
+```
+5. Selanjutnya kita akan menambahkan `MaterialPageRoute`
+```
+Add the code, as shown below:
+
+void _pushSaved() {
+  Navigator.of(context).push(
+    MaterialPageRoute<void>(   // tambahkan 20 baris mulai dari sini...
+      builder: (BuildContext context) {
+        final Iterable<ListTile> tiles = _saved.map(
+          (WordPair pair) {
+            return ListTile(
+              title: Text(
+                pair.asPascalCase,
+                style: _biggerFont,
+              ),
+            );
+          },
+        );
+        final List<Widget> divided = ListTile
+          .divideTiles(
+            context: context,
+            tiles: tiles,
+          )
+          .toList();
+      },
+    ),                       // ... sampai sini.
+  );
+}
+```
