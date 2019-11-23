@@ -172,7 +172,8 @@ Widget _buildSuggestions() {
 - /*1*/ *Function* nilai bali `itemBuilder` dipanggil sekali per `wordpair` yang disarankan.
 - /*2*/ Melakukan pengecekan jika nilai `i` sama dengan ganjil, maka cetak sebuah garis Horizontal
 - /*3*/ Nilai `i` dibagi dengan 2 bertujuan agar tidak ada `worpair` yang sama
-- /*4*/ Dilakukan pengecekan jika nilai `index` lebih besar dari panjang `_suggestions`, maka ambil 10 `wordpair` dan masukan semuanya ke dalam `_suggestions`.
+- /*4*/ Dilakukan pengecekan jika nilai `index` lebih besar dari panjang `_suggestions`, maka ambil 10 `wordpair` dan masukan semuanya ke dalam `_suggestions`.<br/>
+
 Terakhir yakni memanggil *function* `_buildRow` dengan membawa nilai `_suggestions`. Dalam *function* `_buildRow` ini terdapat *widget* `ListTile` yang memuat pengaturan terhadap nilai `_suggestions` yakni *font* yang *camelCase* dan ukuran *font* yakni 18.
 3. Menambahkan *function* _buildRow() ke dalam *widget* `_RandomWordsState`
 ```
