@@ -49,3 +49,7 @@ Widget _buildRow(WordPair pair) {
   );
 }
 ```
+4. Jalankan aplikasi secara `Hot Reload` dengan menekan `F5` atau klik logo petir.
+<p>
+    <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/part21.png" width="300">
+</p>
