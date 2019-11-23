@@ -207,7 +207,7 @@ class MyApp extends StatelessWidget {
 ```
 6. Jalankan kembali programnya dengan menekan tombol `F5`.
 <p align="center">
-  <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc31.png" width="300">
-  <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc32.png" width="300">
-  <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc33.png" width="300">
+  <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc31.png" width="250">
+  <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc32.png" width="250">
+  <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc33.png" width="250">
 </p>
