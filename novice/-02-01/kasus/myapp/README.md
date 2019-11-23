@@ -171,3 +171,38 @@ Widget _buildSuggestions() {
 ``` 
 - /*1*/ 
 3. Menambahkan *function* _buildRow() ke dalam *widget* `_RandomWordsState`
+```
+Widget _buildRow(WordPair pair) {
+  return ListTile(
+    title: Text(
+      pair.asPascalCase,
+      style: _biggerFont,
+    ),
+  );
+}
+```
+4. Dalam `_RandomWordsState` ubah *method* `_build` menggunakan `_buildSuggestions`. Ganti nilai *method* *body* dengan *function* `_buildSuggestions`.
+```
+@override
+Widget build(BuildContext context) {
+  return Scaffold(
+    appBar: AppBar(
+      title: Text('Startup Name Generator'),
+    ),
+    body: _buildSuggestions(),
+  );
+}
+```
+5. Ubah *widget* `MyApp` menjadi seperti berikut:
+```
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Startup Name Generator',
+      home: RandomWords(),
+    );
+  }
+}
+```
+6. Jalankan kembali programnya dengan menekan tombol `F5`.
