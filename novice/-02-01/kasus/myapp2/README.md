@@ -204,4 +204,6 @@ class MyApp extends StatelessWidget {
   <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/part25.png" width="300">
 </p>
 
+---
+
 <h1 align="center">~ SELESAI ~</h1>
