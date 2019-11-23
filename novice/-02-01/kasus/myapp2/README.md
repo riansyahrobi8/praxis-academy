@@ -118,6 +118,7 @@ void _pushSaved() {
 3. Jalankan kembali aplikasi dengan menekan tombol `F5` untuk melihat *icon* daftar pada `AppBar`. Jika icon ini ditekan, maka tidak terjadi apa-apa dikarenakan *function* `_pushSaved` masih kosong. 
 
 Selanjutnya kita akan membuat halaman baru dan mengarahkan halaman ini ke halaman tersebut. Halaman baru dibangun menggunakan properti `MaterialPageRoute`.
+
 4. Panggil *widget* `Navigator.push()` dalam *function* `_pushSaved`.
 ```
 void _pushSaved() {

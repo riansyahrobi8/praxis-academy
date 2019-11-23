@@ -41,7 +41,7 @@ class _RandomWordsState extends State<RandomWords> {
 
   void _pushSave() {
     Navigator.of(context)
-        .push(MaterialPageRoute(builder: (BuildContext context) {
+        .push(MaterialPageRoute<void>(builder: (BuildContext context) {
       final Iterable<ListTile> tiles = _saved.map(
         (WordPair wordPair) {
           return ListTile(
