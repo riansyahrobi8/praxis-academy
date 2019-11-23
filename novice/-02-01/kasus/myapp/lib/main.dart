@@ -47,7 +47,7 @@ class _RandomWordsState extends State<RandomWords> {
         });
   }
 
-  Widget _buildRow(prefix0.WordPair wordPair) {
+  Widget _buildRow(WordPair wordPair) {
     return ListTile(
       title: Text(
         wordPair.asPascalCase,

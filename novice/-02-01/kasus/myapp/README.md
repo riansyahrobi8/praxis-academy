@@ -152,7 +152,7 @@ class _RandomWordsState extends State<RandomWords> {
 }
 ```
 **Penjelesan:**
-*Function* ini akan membuat sebuah *widget* `ListView` yang menyediakan properti *builder*. Dalam properti *builder* terdapat *itemBuilder* menggunakan 2 parameter yakni `_BuildContext` dan iterator baris ke `i` dan mengembalikan *function* nilai balik anonim. Ietrasinya dimulai dari nol dan selalu bertambah setiap kali *function* dipanggil. Bertambah 2 kali setiap `wordpair`, 1 kali untuk `ListTile` pada `_buildRow` dan 1 kali untuk `Divider`.
+*Function* ini akan membuat sebuah *widget* `ListView` yang menyediakan properti *builder*. Dalam properti *builder* terdapat *itemBuilder* yang menggunakan 2 parameter yakni `_BuildContext` dan iterator baris ke `i`, dan mengembalikan *function* nilai balik anonim. Iterasinya dimulai dari nol dan selalu bertambah setiap kali *function* dipanggil. Bertambah 2 kali setiap `wordpair`, 1 kali untuk `ListTile` pada `_buildRow` dan 1 kali untuk `Divider`.
 2. Menambahkan *function* `_buildSuggestions` pada *class* `RandomWordsState`.
 ```
 Widget _buildSuggestions() {
@@ -170,3 +170,4 @@ Widget _buildSuggestions() {
 }
 ``` 
 - /*1*/ 
+3. Menambahkan *function* _buildRow() ke dalam *widget* `_RandomWordsState`
