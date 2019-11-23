@@ -175,6 +175,7 @@ Widget _buildSuggestions() {
 - /*4*/ Dilakukan pengecekan jika nilai `index` lebih besar dari panjang `_suggestions`, maka ambil 10 `wordpair` dan masukan semuanya ke dalam `_suggestions`.<br/>
 
 Terakhir yakni memanggil *function* `_buildRow` dengan membawa nilai `_suggestions`. Dalam *function* `_buildRow` ini terdapat *widget* `ListTile` yang memuat pengaturan terhadap nilai `_suggestions` yakni *font* yang *camelCase* dan ukuran *font* yakni 18. <br/>
+
 3. Menambahkan *function* _buildRow() ke dalam *widget* `_RandomWordsState`
 ```
 Widget _buildRow(WordPair pair) {
