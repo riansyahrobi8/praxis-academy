@@ -53,3 +53,37 @@ Widget _buildRow(WordPair pair) {
 <p align="center">
     <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/part21.png" width="300">
 </p>
+
+### Langka 5: Tambahkan interaktif
+Pada langkah ini kita akan membuat *icon favorite* dapat disentuh. Ketika pengguna menekan *icon favorite* daftar `wordPair` akan disimpan atau dihapus. Untuk melakukan ini kita harus melakuakn perubahan pada `_buildRow` yang ada di *widget* `_RandomWordsState`.
+1. Tambahkan properti onTap dengan *function* `setState()` didalamnya.
+```
+Widget _buildRow(WordPair pair) {
+  final alreadySaved = _saved.contains(pair);
+  return ListTile(
+    title: Text(
+      pair.asPascalCase,
+      style: _biggerFont,
+    ),
+    trailing: Icon(
+      alreadySaved ? Icons.favorite : Icons.favorite_border,
+      color: alreadySaved ? Colors.red : null,
+    ),
+    onTap: () {      // tambahkan baris dari sini...
+      setState(() {
+        if (alreadySaved) {
+          _saved.remove(pair);
+        } else { 
+          _saved.add(pair); 
+        } 
+      });
+    },               // ... sampai sini.
+  );
+}
+```
+Dalam *function* `setState()` terdapat seleksi, jika *icon favorite* dalam keadaan aktif atau merah ditekan, maka `wordPair` akan dihapus dari daftar disukai, begitu sebaliknya.
+<br/>
+2. Jalankan aplikasi secara `Hot Reload` dengan menekan `F5` atau klik logo petir.
+<p align="center">
+  <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/part22.png" width="300">
+</p>
