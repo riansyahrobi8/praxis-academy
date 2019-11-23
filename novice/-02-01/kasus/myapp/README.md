@@ -142,7 +142,7 @@ class MyApp extends StatelessWidget {
     <img src="https://github.com/riansyahrobi8/praxis-academy/blob/master/novice/-02-01/kasus/gambar/sc2.png" width="300">
 </p>
 
-### Langkah 4: Membuat infinite scrolling ListView
+### Langkah 4: Membuat scrolling ListView tidak terbatas
 1. Menambahkan variabel static yakni `_suggestions` yang berisi `<WordPair>[]` array dari *widget* `WordPair` dan `_biggerFont` yang berisi ukuran *font* 18.0 bertipe konstanta.
 ```
 class _RandomWordsState extends State<RandomWords> {
@@ -169,7 +169,11 @@ Widget _buildSuggestions() {
       });
 }
 ``` 
-- /*1*/ 
+- /*1*/ *Function* nilai bali `itemBuilder` dipanggil sekali per `wordpair` yang disarankan.
+- /*2*/ Melakukan pengecekan jika nilai `i` sama dengan ganjil, maka cetak sebuah garis Horizontal
+- /*3*/ Nilai `i` dibagi dengan 2 bertujuan agar tidak ada `worpair` yang sama
+- /*4*/ Dilakukan pengecekan jika nilai `index` lebih besar dari panjang `_suggestions`, maka ambil 10 `wordpair` dan masukan semuanya ke dalam `_suggestions`.
+Terakhir yakni memanggil *function* `_buildRow` dengan membawa nilai `_suggestions`. Dalam *function* `_buildRow` ini terdapat *widget* `ListTile` yang memuat pengaturan terhadap nilai `_suggestions` yakni *font* yang *camelCase* dan ukuran *font* yakni 18.
 3. Menambahkan *function* _buildRow() ke dalam *widget* `_RandomWordsState`
 ```
 Widget _buildRow(WordPair pair) {
