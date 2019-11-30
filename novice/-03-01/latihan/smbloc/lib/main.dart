@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:smbloc/bloc/bloc.dart';
-import 'package:smbloc/model/Weather.dart';
+
+import 'model/Weather.dart';
 
 void main() => runApp(MyApp());
 
@@ -22,7 +23,7 @@ class WeatherPage extends StatefulWidget {
 }
 
 class _WeatherPageState extends State<WeatherPage> {
-  final waetherBloc = WeatherBloc();
+  final weatherBloc = WeatherBloc();
 
   @override
   Widget build(BuildContext context) {
@@ -30,20 +31,31 @@ class _WeatherPageState extends State<WeatherPage> {
       appBar: AppBar(
         title: Text("Fake Weather App"),
       ),
-      body: Container(
-        padding: EdgeInsets.symmetric(vertical: 16),
-        alignment: Alignment.center,
-        child: BlocBuilder(
-          bloc: waetherBloc,
-          builder: (BuildContext context, WeatherState state) {
-            if (state is WeatherInitial) {
-              return buildInitialInput();
-            } else if (state is WeatherLoading) {
-              return buildLoading();
-            } else if (state is WeatherLoaded) {
-              return buildColumnWithData(state.weather);
-            }
-          },
+      body: BlocProvider(
+        bloc: weatherBloc,
+        child: Container(
+          padding: EdgeInsets.symmetric(vertical: 16),
+          alignment: Alignment.center,
+          child: BlocListener(
+            bloc: weatherBloc,
+            listener: (BuildContext context, WeatherState state) {
+              if (state is WeatherLoaded) {
+                print("Load : ${state.weather.cityName}");
+              }
+            },
+            child: BlocBuilder(
+              bloc: weatherBloc,
+              builder: (BuildContext context, WeatherState state) {
+                if (state is WeatherInitial) {
+                  return buildInitialInput();
+                } else if (state is WeatherLoading) {
+                  return buildLoading();
+                } else if (state is WeatherLoaded) {
+                  return buildColumnWithData(state.weather);
+                }
+              },
+            ),
+          ),
         ),
       ),
     );
@@ -81,7 +93,7 @@ class _WeatherPageState extends State<WeatherPage> {
   @override
   void dispose() {
     super.dispose();
-    waetherBloc.dispose();
+    weatherBloc.dispose();
   }
 }
 
@@ -111,5 +123,8 @@ class _CityInputFieldState extends State<CityInputField> {
     );
   }
 
-  void submitCityName(String cityName) {}
+  void submitCityName(String cityName) {
+    final weatherBloc = BlocProvider.of<WeatherBloc>(context);
+    weatherBloc.dispatch(GetWeather(cityName));
+  }
 }
